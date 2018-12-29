@@ -2,51 +2,91 @@
   display: none;
 }
 *{ 	text-decoration:none;
-	--VarWhite:#FAFAFA;
-	--VarRed:#ED3F4A;
-	--VarOrange:#FD7D4E;
-	--VarYellow:#FFA033;
-	--VarBlack:#454545;
-	margin:0px;padding:0px;background-color:var(--VarWhite);text-align:center;
-	text-decoration:none;color:black;font-size:3vh; scroll-behavior: smooth;
+	--Var1:#FD7D4E;/*orange*/
+	--Var2:#FAFAFA;/*white*/
+	--Var3:#454545;/*black*/
+	margin:0px;padding:0px;
+	background-color:var(--Var3);
+	text-align:center;
+	text-decoration:none;
+	color:var(--VarWhite);
+	font-size:3vh;
+	scroll-behavior:smooth;
 	transition:all .33s ease-in-out;
 }
 /* Title open */
 .title-parent{
 	display:flex;
-	background-color:var(--VarRed);
+	background-color:var(--Var1);
 	width:100vw;height:100vh;
 	justify-content: center;
 	align-items: center;
 }
 .title-child{
 	display:inline-flex;
-	background-color:var(--VarWhite);
+	background-color:var(--Var2);
 	padding:10vh;
+	box-shadow:0px 2vh 0px 0px rgba(255,255,255,0.5);
 	font-size:5vh;
-	box-shadow:0px 10px 10px 0px rgba(0,0,0,0.5);
-	text-shadow:0px 10px 0px 0px rgba(0,0,0,0.5);
 	border-radius:2vw;
+	transition:all .15s ease-in-out;
+}
+.title-child:active{
+	display:inline-flex;
+	background-color:var(--Var2);
+	padding:10vh;
+	box-shadow:0px 0vh 0vw 0px rgba(0,0,0,0.5);
+	font-size:5vh;
+	border-radius:2vw;
+	transform:translateY(3vh);
+	transition:all .15s ease-in-out;
 }
 /* Title close */
 .space{
-	background-color:var(--VarBlack);
+	background-color:var(--Var2);
 	height:5vh;
 }
-.horizon-scroll{
+.section{
 	display:flex;
 	width: 100vw;
-	height:33vh;
-	overflow:auto;
+	min-height:33vh;
+	justify-content: center;
+	align-items:top;
+	flex-wrap:wrap;
+}
+.box100{
+	display:inline-flex;
+	border-radius:0.5vw;
+	width:99vw;
+	min-height:5vh;
+	background-color:var(--Var1);
+	margin:0.5vw;
+	padding:0.5vw;
 	justify-content: center;
 	align-items: center;
-	white-space: nowrap;
 }
-.text{
-	background-color: #ecf0f1;
-	margin:5px;
-	padding:50px;
-	width:300px;
-	min-height:20vh;
-	max-height:25vh;
+.box50{
+	display:inline-flex;
+	width:48vw;
+	min-height:5vh;
+	background-color:var(--Var1);
+	margin:0.5vw;
+	padding:0.5vw;
+	justify-content: center;
+	align-items: center;
+	border-radius:0.5vw;
+}
+.Footer{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	width:100vw;
+}
+.btn{
+	display:inline-flex;
+	padding:15px;
+	border-radius:0.5vw;
+	justify-content: center;
+	align-items: center;
+	background-color:var(--Var1);
 }
