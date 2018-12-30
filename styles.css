@@ -27,7 +27,7 @@
 	background-color:var(--Var2);
 	padding:10vh;
 	box-shadow:0px 2vh 0px 0px rgba(255,255,255,0.5);
-	font-size:3vh;
+	font-size:4vh;
 	border-radius:2vw;
 	transition:all .15s ease-in-out;
 }
@@ -43,7 +43,10 @@
 }
 /* Title close */
 .space{
-	background-color:var(--Var3);
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	background-color:var(--Var2);
 	height:5vh;
 }
 .section{
@@ -54,8 +57,8 @@
 	align-items:center;
 	flex-wrap:wrap;
 }
-.section * {
-	width:100vw;
+.box100{
+	width:90vw;
 	display:inline-flex;
 	min-height:15vw;
 	justify-content: center;
@@ -66,17 +69,48 @@
 	border-radius:0.5vw;
 	box-shadow:0px 0vw 1vh 0.2vh rgba(128,128,128,1);
 }
-.box100{
-	width:90vw;
-}
 .box50{
 	width:40vw;
+	display:inline-flex;
+	min-height:15vw;
+	justify-content: center;
+	align-items: center;
+	background-color:var(--Var2);
+	margin:3vw;
+	padding:2vw;
+	border-radius:0.5vw;
+	box-shadow:0px 0vw 1vh 0.2vh rgba(128,128,128,1);
+}
+.box25{
+	width:15vw;
+	display:inline-flex;
+	min-height:15vw;
+	justify-content: center;
+	align-items: center;
+	background-color:var(--Var2);
+	margin:3vw;
+	padding:2vw;
+	border-radius:0.5vw;
+	box-shadow:0px 0vw 1vh 0.2vh rgba(128,128,128,1);
+}
+.box33{
+	width:20vw;
+	display:inline-flex;
+	min-height:15vw;
+	justify-content: center;
+	align-items: center;
+	background-color:var(--Var2);
+	margin:3vw;
+	padding:2vw;
+	border-radius:0.5vw;
+	box-shadow:0px 0vw 1vh 0.2vh rgba(128,128,128,1);
 }
 .Footer{
 	display:flex;
 	justify-content: center;
 	align-items: center;
 	width:100vw;
+	color:var(--Var2);
 	height:15vh;
 }
 .btn{
@@ -100,7 +134,48 @@
 	transition:all .15s ease-in;
 	box-shadow:0px 1vh 0vw 0px rgba(128,128,128,1);
 }
+.info{
+	font-size:2vh;
+	position:absolute;
+	margin:5vw 5vh;
+	background-color:transparent;
+	color:rgba(0,0,0,0.5);
+}
 
-@media handheld,(device-aspect-ratio: 9/16),(device-aspect-ratio: 3/4),(device-aspect-ratio: 10/16){
+.img{
+	background-color:transparent;
+	margin:2vw;
+}
+
+.fa {
+  padding: 2vw;
+  font-size: 2.5vh;
+  width: 2.5vh;
+  height:2.5vh;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+.fa:active {
+ padding:4vw;
+}
+
+#btn{
+	margin:2vw
+}
+.fa-twitter {
+	box-shadow:0px 1vh 0vw 0px rgba(128,128,128,1);
+  background: #55ACEE;
+  border-radius:50%;
+  color: white;
+}
+
+@media handheld,(max-width:1080px){
 .box50{width: 90vw;}
+.box33{width: 90vw;}
+.box25{width: 90vw;}
 }
