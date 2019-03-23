@@ -1,43 +1,60 @@
-*{margin: 0;text-align:center; padding: 0;color:;font-size:1em;}
+/* "*{...}" = all selectors */
+*{
+	margin: 0;text-align:center;
+	padding: 0;color:white;
+	font-size:1em;
+	perspective:1px;transform-style:preserve-3d;
+	width:100vw;height:100vh;z-index:0;
+}
 
+/*Header OPEN*/
 .Header{
-	display:flex;
-	background-color:#e73727;
-	width:100vw;
-	height:50vh;
-	justify-content:center;
+	display:flex;background-color:#e73727;
+	width:100vw;height:50vh;justify-content:center;
 	align-items:center;
 }
-
 .Header p{
-	font-size:5vh;
-	padding:2vh;
-	color:#e73727;
-	background-color:rgb(250,250,250);
-	border-radius:1vw;
+	display:flex;justify-content:center;align-items:center;
+	font-size:2.5vw;padding:12vh;width:5vw;height:5vw;
+	border:solid 1.5vw;background-color:rgba(0,0,0,0.5);
+	border-radius:50vh;transition:ease 0.25s;
 }
+.Header p:hover{
+	padding:15vh;
+	background-color:rgba(0,0,0,0.1);
+	transform:rotate(-20deg);transition:ease 0.1s;
+}
+/*Header CLOSE*/
 
+/*NavBar OPEN*/
 .Nav{
-	width:4vw;
+	width:4vw;height:2vw;
 	border-radius:0px 0px 20px 0px;
-	display:flex;
-	flex-wrap:wrap;
+	display:flex wrap;
 	position:fixed;
+	z-index:2;
 	justify-content:center;
 	background-color:transparent;
 }
 .Nav a{
+	transition:ease 0.25s;
 	margin:0.5vw;
+	opacity:0.85;
 	background-color:white;
 	width:6vh;
 	height:6vh;
-	display:flex;
-	text-align:center;
+	display:inline-flex;
 	border-radius:5vh;
 	text-decoration:none;
 	justify-content:center;
 	align-items:center;
 	color:black;
 	font-size:1.3em;
-	display:inline-flex;
 }
+.Nav a:hover{
+	transition:ease 0.25s;
+	opacity:1;
+	transform:;
+	transform:scale(1.25) rotate(10deg);
+}
+/*NavBar CLOSE*/
