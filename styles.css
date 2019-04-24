@@ -1,60 +1,65 @@
-/* "*{...}" = all selectors */
-*{
-	margin: 0;text-align:center;
-	padding: 0;color:white;
-	font-size:1em;
-	perspective:1px;transform-style:preserve-3d;
-	width:100vw;height:100vh;z-index:0;
+html,body{
+	padding:0;margin:0;width:100vw;height:100vh;
 }
 
-/*Header OPEN*/
-.Header{
-	display:flex;background-color:#e73727;
-	width:100vw;height:50vh;justify-content:center;
+*{
+	background-color:white;
+	font-size:3vh;
+	text-align:center;text-decoration:none;color:white;
+	transition:transform ease 0.25s;
+}
+.top,.block,.nav,.nav a,.block a{
+	display:flex;
+	justify-content:center;
 	align-items:center;
 }
-.Header p{
-	display:flex;justify-content:center;align-items:center;
-	font-size:2.5vw;padding:12vh;width:5vw;height:5vw;
-	border:solid 1.5vw;background-color:rgba(0,0,0,0.5);
-	border-radius:50vh;transition:ease 0.25s;
-}
-.Header p:hover{
-	padding:15vh;
-	background-color:rgba(0,0,0,0.1);
-	transform:rotate(-20deg);transition:ease 0.1s;
-}
-/*Header CLOSE*/
 
-/*NavBar OPEN*/
-.Nav{
-	width:4vw;height:2vw;
-	border-radius:0px 0px 20px 0px;
-	display:flex wrap;
-	position:fixed;
+.nav{
 	z-index:2;
-	justify-content:center;
+	display:flex;
+	background-color:orange;
+	position:fixed;
+	width:100vw;
+	height:10vh;
+}
+
+.nav a{
+	transition:ease 0.2s;
+	border-radius:0.5vw;
+	background-color:transparent;
+	width:9vh;
+	height:9vh;
+}
+.nav a:hover{
+	font-size:4vh;
+	background-color:rgba(255,255,255,0.25);
+}
+
+.top{
+	padding-top:10vh;
+	width:100vw;
+	background-color:white;
+	color:black;
+	font-size:8vh;
+	height:30vh;
+}
+.block{
+	flex-wrap:wrap;
+	padding:5vh 5vw;
+	width:90vw;
+	min-height:50vh;
+	max-height:100vh;
+	background-color:orange;
+}
+.block p ,.block a {
 	background-color:transparent;
 }
-.Nav a{
-	transition:ease 0.25s;
-	margin:0.5vw;
-	opacity:0.85;
-	background-color:white;
-	width:6vh;
-	height:6vh;
-	display:inline-flex;
-	border-radius:5vh;
-	text-decoration:none;
-	justify-content:center;
-	align-items:center;
-	color:black;
-	font-size:1.3em;
+.block a{
+	background-color:rgba(255,255,255,0.3);
+	width:15vh;
+	height:15vh;
+	border:dashed 0.3vw white ;
 }
-.Nav a:hover{
-	transition:ease 0.25s;
-	opacity:1;
-	transform:;
-	transform:scale(1.25) rotate(10deg);
+.block a:hover{
+	transform:rotate(7deg);
 }
-/*NavBar CLOSE*/
