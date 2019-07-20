@@ -1,24 +1,10 @@
 *{
-	--color1:#FF821E;
-	--color2:#FF1E1E;
-	text-decoration:none;
-	scroll-behavior:smooth;
-	transition:scroll ease 1s;
-	overflow-x:hidden;
-	text-align:center;
-	margin:0;
-	padding:0;
-	color:white;
-	font-size:2.5vh;
-	transition:transform ease 0.35s;
+	--color1:rgb(58, 136, 214);
+	--color2:rgb(112, 45, 237);
+	text-decoration:none;scroll-behavior:smooth;transition:scroll ease 1s;
+	overflow-x:hidden;text-align:center;margin:0;padding:0;color:white;
+	font-family:arial;font-size:2.5vh;transition:transform ease 0.35s;
 
-}
-* {
-    -webkit-touch-callout:none;
-    -webkit-user-select:none;
-    -moz-user-select:none;
-    -ms-user-select:none;
-    user-select:none;
 }
 html{
 	background-color:var(--color1);
@@ -33,15 +19,14 @@ html{
 }
 
 .Head{
-	width:85vw;
-	margin-left:15vw;
+	width:100vw;
 	min-height:100vh;
-	background-color:rgb(233,230,230);
+	background-color:rgb(230,230,230);
 	flex-flow:wrap;
 	align-items:top;
 }
 .sec{
-	width:85vw;
+	width:100vw;
   margin-top:2vw;
   margin-bottom:2vw;
 	transform:scale(.95);
@@ -50,49 +35,51 @@ html{
 	border-radius:2.5vh;
 	flex-wrap:wrap;	
 	background-image:linear-gradient(33deg, var(--color1),var(--color2) );
-	color:rgb(50,50,50);
 }
 .top{
   width:100%;
-  height:5vw;
+  height:5vh;
   background-image:linear-gradient(33deg, var(--color1),var(--color2) );
-  color:rgb(50,50,50);
+ 
 }
 .sec h1{
 	font-size:3vh;
 	height:5vh;
-	width:20%;
+	width:100%;
 	justify-content:center;
-	border-radius:0 0 2.5vh 0;
-	background-color:rgb(50,50,50);
+	background-color:rgba(250,250,250,0.25);
 }
 .content{
 	align-items:top;
 	min-height:8vh;
+	flex-direction:column;
 	width:98%;
 	margin:1%;
 }
 .media{
-	flex-wrap:wrap;
-	height:100%;
-	width:50%;
-	display:flex;
+	justify-content:center;
+	width:100vw;
+	display:inline-flex;
 	background-color:transparent;
-	transform:scale(.85);
+	transform:scale(1);
 }
 .media img,iframe{
-	width:100%;
+	width:33%;
 	border-radius:1.5vw;
-	transform:scale(0.9);
+	transform:scale(1);
 }
 .content span{
-	width:50%;
+	display:inline-flex;
+	width:80vw;
+}
+.content span p{
+	font-size:3vh;
 }
 .download{
 	transition:background ease 0.1s;
-	background-color: rgb(50,50,50);
+	background-color:rgba(250,250,250,0.5);
 	color: white;
-	width:8vw;
+	width:20vh;
 	font-size:3vh;
 	display:flex;
 	justify-content:center;
@@ -115,38 +102,19 @@ html{
 	transition:0s;
 	padding:0.5vw;
 	border-radius:1.5vh;
-  color:rgb(50,50,50);
-	background-color:white;
-}
-.Side{
-	position:fixed;
-	display:flex;
-	width:15vw;
-	justify-content:center;
-	align-items:top;
-	flex-wrap:wrap;
-	background-color:transparent;
-	height:100vh;
-	z-index:5;
-}
-.Side a{
-	width:10vw;
-	transform:scale(0.8);
-	height:2vw;
-	justify-content:center;
-	align-items:center;
-	border-radius:2vh;
-	font-size:1.5vw;
-	background-color:rgb(50,50,50);
-	display:flex;
+	background-color:rgba(250,250,250,0.25);
 }
 .Title{
-	font-size:6vh;
-  justify-content:center;
-  align-items:center;
-  display:flex;
-  text-shadow:0vh 0vh .5vh white;
-  height:100%;
+ 	justify-content:center;
+	align-items:center;
+	display:flex;
+	width:100%;
+	overflow:hidden;
+
+}
+.Title p{
+	font-size:4vh;
+	height:100%;
 }
 
 /** All RIGHT Reserve to MatthysDev **/
