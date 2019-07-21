@@ -8,6 +8,13 @@
 	-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;
 	-moz-user-select:none;-ms-user-select:none;user-select:none;
 }
+@keyframes AnimColor1 {
+  0% { background-color:#2d74cc;}
+  25%{ background-color:#f5772f;}
+  50%{ background-color:#7c27b0;}
+  75%{ background-color:#27b029;}
+  100%{ background-color:#2d74cc;}
+}
 html{
 	background-color:var(--color1);
 }
@@ -23,7 +30,9 @@ html{
 	flex-flow:wrap;
 }
 .top,.sec{
-	background-image:linear-gradient(33deg,var(--color1),var(--color2) );
+	animation-name:AnimColor1;
+	 animation-duration: 60s;
+	 animation-iteration-count:infinite;
 }
 .top,.sec h1,.Title,.content{
 	width:100%;
@@ -34,17 +43,19 @@ html{
 .sec,.media img,.media iframe,.Tags h3,.download{
 	border-radius:1.5vh;
 }
+.sec,.content span,.Tags *{
+	transform:scale(.95);
+}
 .sec{
-  	margin-top:1.5vw;transform:scale(.95);
+  	margin-top:1.5vw;
   	box-shadow:0vh 2vh .85vh .1vh rgba(0,0,0,0.25);
 }
 .top{
   height:7vh;
 }
 .sec h1{
-	font-size:3vh;
 	height:5vh;
-	background-color:rgba(250,250,250,0.25);
+	background-color:rgba(250,250,250,0.33);
 }
 .content{
 	align-items:top;
@@ -58,24 +69,18 @@ html{
 }
 .content span{
 	min-height:15vh;
-	transform:scale(.9);
 }
 .download{
-	transition:background ease 0.21s;background-color:rgba(250,250,250,0.5);
-	color: white;width:20vh;height:5vh;margin:0;
+	transition:background ease 0.21s;background-color:rgba(250,250,250,0.66);
+	width:20vh;height:6vh;
 }
 
 .download:hover {
 	cursor:pointer;
 	background-color:rgba(0,200,45);
 }
-
-.Tags *{
-  transform:scale(.9);
-}
-
 .Tags h3{
-	transition:0s;padding:0.5vw;;background-color:rgba(250,250,250,0.25);
+	transition:0s;padding:0.5vw;background-color:rgba(250,250,250,0.33);
 }
 
 .Title{
