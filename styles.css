@@ -8,6 +8,7 @@
 	color:white;
 	-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;
 	-moz-user-select:none;-ms-user-select:none;user-select:none;
+	transition:width ease 0.5s,height ease 0.5s;
 	}
 html,body *,body{
 	justify-content:center;
