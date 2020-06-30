@@ -1,24 +1,18 @@
-*{scroll-behavior:smooth;overflow-x:hidden;margin:0;padding:0;color:inherit;text-decoration:none;text-align:center;font-size:3.5vh;font-family:Gill Sans,sans-serif;color:#fff;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;transition:width ease 0.5s,height ease .75s}
+*{scroll-behavior:smooth;overflow-x:hidden;margin:0;padding:0;color:inherit;text-decoration:none;text-align:center;font-size:3.5vh;font-family:Gill Sans,sans-serif;color:#E4E4E4;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;transition:width ease bicubic .75s,height bicubic .75s}
 html,body *,body{justify-content:center;align-items:center;flex-direction:column}
 html,body div,.pic_show{display:flex}
-body{background-color:#282832;min-height:200vh}
-.header,.box,.Para,.pic_show,.Game p,.Game .name,.Game .download{background:linear-gradient(150deg,#FF3C00,#993AD0,#026bff,#3ADB32);background-position:center;background-attachment:fixed;background-size:cover}
+body{background-color:#303030;min-height:200vh}
+.header,.box,.Para,.pic_show,.Game p,.Game .name,.Game .download{background:#3EEE63;background-position:center;background-attachment:fixed;background-size:cover}
 .header{width:100vw;height:100vh}
 .header p{font-size:10vh}
 .section,.Para,.Para a,.section *,.box,.Game{border-radius:1.25vh}
-.section{margin:2.5vw;padding:2.5vw;width:90vw;background:rgba(250,250,250,0.02);flex-wrap:wrap;flex-flow:column;min-height:10vh}
+.section{margin:2.5vw;padding:2.5vw;width:90vw;background:rgba(250,250,250,0.00);flex-wrap:wrap;flex-flow:column;min-height:10vh}
 .Para,.Para p,.section > div{width:85vw;padding:2vw;margin:.5vw}
 .Para{min-height:10vh}
-.pic_show{overflow:hidden;overflow-y:visible;height:50vh;padding:2.5vw;padding-top:10vw;flex-wrap:wrap;align-content:center;flex-direction:row}
 p a{background:rgba(0,0,0,0.33);padding:.5vw;display:inline-flex;justify-content:center;align-content:center;opacity:.8;transition:ease .2s}
 p a:hover{opacity:1;background:rgba(0,0,0,0.7)}
-.pic_show *{border-radius:.25vw;overflow:hidden;width:auto;height:auto;background-color:rgba(50,50,50,0.5);padding:.1vw;margin:.1vw;transition:ease .35s}
-.pic_show :hover{background-color:rgba(250,250,250,0.75)}
-.pic_show :hover *{transform:scale(0.95)}
-.pic_show :active{transform:scale(1.2);z-index:2}
-.pic_show * *{width:auto;height:10vw;border-radius:.25vw;background:transparent;padding:0;margin:0}
 .Game *{margin:0;padding:0;border-radius:0}
-.Game{background-color:#282832;display:flex;padding:.5vw;margin-bottom:2vh;flex-flow:column;flex-wrap:wrap;justify-content:flex-start;min-height:5vh}
+.Game{background-color:#D2D2D2;display:flex;padding:1vw;margin:2vh;flex-flow:column;flex-wrap:wrap;justify-content:flex-start;min-height:5vh}
 .Game p{display:flex;width:100%;align-content:center;justify-content:center;min-height:20vh;border-radius:0 0 1.25vh 1.25vh}
 .Game .name,.Game .download{display:flex;justify-content:center;height:5vh;width:100%}
 .Game .name{border-radius:1.25vh 1.25vh 0 0}
