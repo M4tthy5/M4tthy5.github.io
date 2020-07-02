@@ -2,7 +2,7 @@
 html,body *,body{justify-content:center;align-items:center;flex-direction:column}
 html,body div,.pic_show{display:flex}
 body{background-color:#303030;min-height:200vh}
-.header,.box,.Para,.pic_show,.Game p,.Game .name,.Game .download{background:#3EEE63;background-position:center;background-attachment:fixed;background-size:cover}
+.header,.box,.Para,.pic_show,.Game p,.Game .name,.Game .download{background:#506CFF;background-position:center;background-attachment:fixed;background-size:cover}
 .header{width:100vw;height:100vh}
 .header p{font-size:10vh}
 .section,.Para,.Para a,.section *,.box,.Game{border-radius:1.25vh}
