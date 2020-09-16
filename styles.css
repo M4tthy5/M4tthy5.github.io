@@ -14,7 +14,7 @@ html,body *,body{justify-content:center;align-items:center;flex-direction:column
 html,body div,.pic_show{display:flex}
 
 body{background-image:url(Back.png);min-height:20vh;
-	background-size:8%;
+	background-size:4%;
 }
 
 .header,.box,.Para,.pic_show,.Game p,.Game .name,.Game .download{background:#4B70D9;background-position:center;background-attachment:fixed;background-size:cover}
