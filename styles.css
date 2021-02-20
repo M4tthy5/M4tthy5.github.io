@@ -43,6 +43,7 @@ body{
 	background-color:var(--MainColor);
 	position:absolute;
 	min-height:120vh;
+	padding-bottom:10vh;
 	width:100%;
 	top:0;left:0;
 }
@@ -61,13 +62,13 @@ body{
 }
 
 .Nav{
-	height:3vh;
 	display:flex;
-	justify-content:space-around;
+	justify-content:flex-start;
 	align-items:center;
 }
 
 .Nav a{
+	font-size-adjust:.6;
 	margin:1vw;
 	overflow-x:hidden;
 }
@@ -113,17 +114,38 @@ footer a:hover{
 
 .twitter{
 	width:50%;
-	height:auto;
-	margin:auto;
+	height:auto;margin:auto;
 	display:flex;
-	border:3px dashed;
 	border-radius:25px;
 }
 .Floating_img {
-	
 	animation:pop ease 3s;
 	width:20vw;
 	height:20vw;
 	float:left;
 	margin:0 2vw;
-	border-radius:1vh;
+	border-radius:1vh;}
+
+@media screen and (max-width: 992px) {
+	.twitter{
+		width:90%;
+		height:50vh;
+	}
+	.Txt{
+		display:flex;
+		flex-wrap:wrap;
+		flex-direction:column;
+		width:90%;
+		font-size-adjust:.7;
+		justify-content:center;
+	}
+	.Floating_img {
+		float:none;
+		margin:0 auto;
+		width:60vw;height:60vw;
+	}
+	.twitter-timeline{
+		height:100%;
+	}
+}
+
