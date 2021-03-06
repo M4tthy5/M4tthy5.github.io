@@ -1412,27 +1412,19 @@ header .logo a {
  * --------------------------------------------------------------- 
  */
 @media only screen and (max-width:1024px) {
-	header .top-bar {
-		left: 60px;
-	}
+	
 }
 
 @media only screen and (max-width:768px) {
-	header .top-bar {
-		left: 50px;
-	}
+	
 }
 
 @media only screen and (max-width:600px) {
-	header .top-bar {
-		left: 35px;
-	}
+	
 }
 
 @media only screen and (max-width:400px) {
-	header .top-bar {
-		left: 25px;
-	}
+	
 }
 
 
@@ -1504,7 +1496,7 @@ header .logo a {
 	line-height: 2.4rem;
 	text-transform: uppercase;
 	letter-spacing: .2rem;
-	text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 .intro-content .intro-position span {
@@ -1672,6 +1664,7 @@ header .logo a {
 	background: var(--back);
 	padding-top: 12rem;
 	padding-bottom: 15rem;
+	min-height: 100vh;
 }
 
 #about .section-intro {
