@@ -70,7 +70,6 @@
 
 	--ColorText: #63db36;
 	--Text: #ffffff;
-
 	--back: #1f1f1f;
 	--navcolor: #1a1a1a;
 	color: var(--Text);
@@ -1713,7 +1712,7 @@ header .logo a {
 	color: var(--ColorText);
 }
 
-.about-content .info-list {
+.info-list {
 	list-style: none;
 	margin-left: 0;
 }
@@ -1782,7 +1781,7 @@ header .logo a {
 		text-align: center;
 	}
 
-	.about-content .info-list,
+	.info-list,
 	.about-content .skill-bars {
 		margin-bottom: 4.2rem;
 	}
@@ -2088,7 +2087,7 @@ header .logo a {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.2rem;
 	letter-spacing: .1rem;
-	color:var(--Text);
+	color: var(--Text);
 }
 
 #portfolio .folio-item:hover .overlay {
@@ -2182,7 +2181,7 @@ header .logo a {
 	letter-spacing: .1rem;
 	display: block;
 	text-align: left;
-	color:var(--Text);
+	color: var(--Text);
 }
 
 .popup-modal .link-box {
@@ -2209,7 +2208,8 @@ header .logo a {
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
-.popup-modal .link-box a{
+
+.popup-modal .link-box a {
 	color: #FFFFFF;
 }
 
@@ -2966,4 +2966,10 @@ footer .copyright span:last-child::after {
 
 .grey {
 	filter: grayscale(100);
+}
+
+.source a{
+	color:var(--ColorText);
+	margin:0;
+	transform:scale(0.8);
 }
