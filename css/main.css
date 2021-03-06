@@ -37,14 +37,47 @@
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
 
+@keyframes shake {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+
+
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+
+
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+
+
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
 * {
 
 	--ColorText: #63db36;
 	--Text: #ffffff;
 
-	--back: #191919;
+	--back: #1f1f1f;
 	--navcolor: #1a1a1a;
 	color: var(--Text);
+}
+
+.shake:hover {
+	animation: shake 0.4s infinite;
 }
 
 /** 
@@ -207,7 +240,7 @@ p.lead {
 	font-family: "lora-regular", serif;
 	font-size: 2rem;
 	line-height: 1.8;
-	color: #888888;
+	color: var(--Text);
 }
 
 @media only screen and (max-width:768px) {
@@ -880,7 +913,7 @@ button.large,
 
 button.stroke,
 .button.stroke {
-	background: transparent !important;
+	background: #000000a8 !important;
 	border: 3px solid #313131;
 	line-height: 4.8rem;
 }
@@ -1128,7 +1161,7 @@ input::-moz-focus-inner {
 .section-intro h1 {
 	font-family: "poppins-semibold", serif;
 	font-size: 3.6rem;
-	color: #313131;
+	color: var(--Text);
 	line-height: 1.25;
 	margin-bottom: 1.2rem;
 }
@@ -1496,8 +1529,8 @@ header .logo a {
 }
 
 .intro-content .button {
-	color: #FFFFFF !important;
-	border-color: rgba(255, 255, 255, 0.3);
+	color: var(--ColorText) !important;
+	border-color: var(--ColorText);
 	height: 6rem !important;
 	line-height: 5.4rem !important;
 	padding: 0 3.5rem 0 3rem !important;
@@ -1677,6 +1710,7 @@ header .logo a {
 	font-size: 1.8rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
+	color: var(--ColorText);
 }
 
 .about-content .info-list {
@@ -2041,7 +2075,7 @@ header .logo a {
 }
 
 #portfolio .folio-title {
-	color: #FFFFFF;
+	color: var(--ColorText);
 	font-size: 3.3rem;
 	padding: 0 3rem;
 	margin-bottom: 0;
@@ -2054,7 +2088,7 @@ header .logo a {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.2rem;
 	letter-spacing: .1rem;
-	color: rgba(255, 255, 255, 0.6);
+	color:var(--Text);
 }
 
 #portfolio .folio-item:hover .overlay {
@@ -2100,7 +2134,7 @@ header .logo a {
  */
 .popup-modal {
 	max-width: 550px;
-	background: #FFFFFF;
+	background: var(--back);
 	position: relative;
 	margin: 0 auto;
 }
@@ -2109,12 +2143,21 @@ header .logo a {
 	position: relative;
 }
 
+.popup-modal .media img {
+	width: 100%;
+	height: 100%;
+}
+
 .popup-modal img {
 	vertical-align: bottom;
 }
 
 .popup-modal .description-box {
 	padding: 1.8rem 3.6rem 3rem;
+}
+
+.popup-modal .description-box h4 {
+	color: var(--ColorText);
 }
 
 .popup-modal .description-box h4 {
@@ -2139,7 +2182,7 @@ header .logo a {
 	letter-spacing: .1rem;
 	display: block;
 	text-align: left;
-	color: rgba(0, 0, 0, 0.5);
+	color:var(--Text);
 }
 
 .popup-modal .link-box {
@@ -2148,11 +2191,11 @@ header .logo a {
 	background: #000000;
 }
 
-.popup-modal .link-box a {
+.popup-modal .link-box * {
 	font-family: "poppins-bold", sans-serif;
 	font-size: 1.2rem;
 	line-height: 6rem;
-	color: #FFFFFF;
+	color: transparent;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	cursor: pointer;
@@ -2165,6 +2208,9 @@ header .logo a {
 	-webkit-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+}
+.popup-modal .link-box a{
+	color: #FFFFFF;
 }
 
 .popup-modal .link-box a:first-child {
@@ -2200,7 +2246,7 @@ header .logo a {
 
 /* overlay animate in */
 .mfp-fade.mfp-bg.mfp-ready {
-	opacity: .9;
+	opacity: .95;
 }
 
 /* overlay animate out */
@@ -2338,6 +2384,7 @@ header .logo a {
 	width: 100%;
 	height: 100%;
 	background: #151515;
+	background: red;
 	opacity: .9;
 }
 
@@ -2790,7 +2837,7 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 footer {
-	padding-bottom: 3rem;
+	padding: 3rem 0;
 	font-size: 1.4rem;
 	font-family: "poppins-regular", sans-serif;
 }
@@ -2916,3 +2963,7 @@ footer .copyright span:last-child::after {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+.grey {
+	filter: grayscale(100);
+}
