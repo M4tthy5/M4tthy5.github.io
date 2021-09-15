@@ -79,6 +79,11 @@
 	animation: shake 0.4s infinite;
 }
 
+
+.outline{
+	border:var(--ColorText) .25vh solid;
+}
+
 /** 
  * ===================================================================
  * 02. base style overrides - (_document-setup.scss)

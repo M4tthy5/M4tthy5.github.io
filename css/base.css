@@ -266,6 +266,10 @@ body {
 	-webkit-text-size-adjust: none;
 }
 
+.outline{
+	border:greenyellow .5vh solid;
+}
+
 body,
 input,
 button {
