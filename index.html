@@ -1,315 +1,52 @@
 <!DOCTYPE html>
-<html class="no-js" lang="fr">
+<html lang="fr">
 
 <head>
 	<meta charset="utf-8">
-	<title>Matthys's Portefolio</title>
-	<meta name="description" content="Portefolio by Degroote Matthys">
-	<meta name="keywords" content="UE4, M4tthy5,Dev ,Gamedev, Degroote Matthys, MadCart, C#, C++, Maths, Portefolio">
-	<meta name="author" content="Degroote Matthys">
+	<title>M4tthy5's Portefolio</title>
+	<meta name="description" content="Portefolio by M4tthy5">
+	<meta name="keywords" content="UE4, M4tthy5,Dev ,Gamedev,MadCart, C#, C++, Maths, Portefolio">
+	<meta name="author" content="M4tthy5">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<meta name="p:domain_verify" content="9bdc0720cd902d4f7f97cc1875253210" />
-	<link rel="stylesheet" href="css/base.css">
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/vendor.css">
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
 	<link rel="icon" type="image/png" href="favicon.png">
 </head>
 
-<body id="top">
+<body>
+	<style>
+		html,
+		body {
+			background-color: rgb(31, 31, 31);
+			color: rgb(211, 211, 211);
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 3vw;
+			width: 100vw;
+			height: 100vh;
+		}
 
-	<header>
-		<div class="top-bar">
-			<a class="menu-toggle" href="#"><span>Menu</span></a>
-			<nav id="main-nav-wrap">
-				<ul class="main-navigation">
-					<li class="current"><a class="smoothscroll" href="#intro" title="">Accueil</a></li>
-					<li><a class="smoothscroll" href="#about" title="">À propos</a></li>
-					<li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
-				</ul>
-			</nav>
-		</div> <!-- /top-bar -->
-	</header> <!-- /header -->
+		body {
+			background-image: linear-gradient(45deg, rgb(29, 164, 74), rgb(24, 136, 177));
+		}
 
-	<section id="intro">
+		h1 {
+			box-shadow: 0 0 0 1vw;
+			padding: 0.5vw;
+			border-radius: 0 0.5vw;
+			background-color: rgba(0, 0, 0, 0.263);
+			transition: ease-in-out 0.5s;
+		}
 
-		<div class="intro-overlay"></div>
-
-		<div class="intro-content">
-			<div class="row">
-				<div class="col-twelve">
-					<h5>Bonjour</h5>
-					<h1>Je suis Degroote Matthys</h1>
-					<p class="intro-position">
-						<span>Développeur</span>
-						<span>Modeleur 3D</span>
-						<span>Autodidacte</span>
-					</p>
-					<a class="button stroke smoothscroll" href="#about" title="">A propos de moi</a>
-				</div>
-			</div>
-		</div>
-		<ul class="intro-social">
-			<li><a href="https://twitter.com/M4tthy5"><i class="fa fa-twitter shake"></i></a></li>
-			<li><a href="https://paypal.me/m4tthy5"><i class="fa fa-paypal shake"></i></a></li>
-			<li><a href="https://www.youtube.com/channel/UCA81V-uMhPA2cgEsjMa13gA"><i
-						class="fa fa-youtube shake"></i></a></li>
-		</ul> <!-- /intro-social -->
-	</section> <!-- /intro -->
-	<section id="about">
-		<div class="row section-intro">
-			<div class="col-twelve">
-
-				<h5>À propos</h5>
-				<div class="intro-info">
-
-					<img class="outline" src="images/profile-pic.jpg" alt="Profile Picture">
-
-					<p class="lead">19 ans. J'aime la modélisation 3D,
-						Le développement de jeux, le Procédural & déterministe 🦾<br>
-						Le développement de jeux est ma passion. J'ai commencé à développer des jeux en 2016.
-						Actuellement étudiant à E-ArtSup.
-
-				</div>
-
-			</div>
-		</div> <!-- /section-intro -->
-		<div class="row about-content">
-
-			<div class="col-six tab-full">
-				<ul class="info-list">
-					<li>
-						<strong>Nom Prenom :</strong>
-						<span>Degroote Matthys</span>
-					</li>
-					<li>
-						<strong>Naissance :</strong>
-						<span>12 September 2002</span>
-					</li>
-
-				</ul>
-			</div>
-			<div class="col-six tab-full">
-				<ul class="info-list">
-					<li>
-						<strong>Website :</strong>
-						<span>M4tthy5.github.io</span>
-					</li>
-					<li>
-						<strong>Email :</strong>
-						<span>M4tthy5@gmx.fr</span>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</section> <!-- /process-->
-	<section id="portfolio">
-		<div class="row section-intro">
-			<div class="col-twelve">
-				<h5>Portfolio</h5>
-				<h1>Découvrez quelques-uns de mes travaux</h1>
-			</div>
-		</div> <!-- /section-intro-->
-		<div class="row portfolio-content">
-			<div class="col-twelve">
-				<!-- portfolio-wrapper -->
-				<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/madcart.png" alt="Madcart">
-							<a href="#modal-01" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Madcart</h3>
-										<span class="folio-types">
-											Game Jam
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/Wfc.png" alt="Wave Fonction Collapse">
-							<a href="#modal-02" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Wave Fonction Collapse</h3>
-										<span class="folio-types">
-											Génération Procedural
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/Road_Gen.gif" alt="Génération de routes">
-							<a href="#modal-03" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Roads Gen</h3>
-										<span class="folio-types">
-											Génération Procedural
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/Circuit_Gen.gif" alt="Génération de Circuit">
-							<a href="#modal-04" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Circuit Gen</h3>
-										<span class="folio-types">
-											Génération Procedural
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-
-					<!-- modal popups - begin-->
-					<div id="modal-01" class="popup-modal slider mfp-hide">
-						<div class="media">
-							<img src="images/portfolio/modals/Madcart.gif" alt="" />
-						</div>
-						<div class="description-box">
-							<h4>MadCart</h4>
-							<p>MadCart est un petit jeu de course de caddies réalisé lors d'une game jam de 4 jours,
-								c'est un jeu de réflexe et de timing, vous n'avez qu'une seule touche pour gagner.</p>
-							<div class="categories">Game Jam</div>
-							<div class="categories">Unreal Engine 4</div>
-						</div>
-
-						<div class="link-box">
-							<a href="https://batice77.itch.io/madcart">Détails</a>
-							<a href="#" class="popup-modal-dismiss">Fermer</a>
-						</div>
-
-					</div> <!-- /modal-01 -->
-
-					<div id="modal-02" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/Wfc.png" alt="Wave Fonction Collapse">
-							<img src="images/portfolio/modals/Wfc.gif" alt="Wave Fonction Collapse" />
-						</div>
-						<div class="description-box source">
-							<h4>Wave Fonction Collapse</h4>
-							<p>
-								Système d'assemblage modulaire de pièces sur une grille copiant les contraintes et
-								probabilités de placement de chaque pièce afin de pouvoir générer des assemblages
-								suivant la même logique mais à une échelle beaucoup plus grande et/ou aléatoire.
-							</p>
-							Source
-							<a target="_blank" href="https://www.youtube.com/watch?v=2SuvO4Gi7uY">Video</a>, <a
-								target="_blank" href="https://bolddunkley.itch.io/wfc-mixed">Démo Web</a>,
-							<a target="_blank"
-								href="https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/">article</a>,
-							<a target="_blank" href="https://github.com/mxgmn/WaveFunctionCollapse">github</a>
-							<div class="categories">Génération Procedural</div>
-							<div class="categories">Unreal Engine 4</div>
-						</div>
-
-						<div class="link-box">
-							<div>😁</div>
-							<a href="#" class="popup-modal-dismiss">Fermer</a>
-						</div>
-					</div> <!-- /modal-02 -->
-
-					<div id="modal-03" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/modals/Road_Gen.gif" alt="" />
-						</div>
-						<div class="description-box source">
-							<h4>Roads Gen</h4>
-							<p>
-								Système de génération de routes à partir d'un groupe de points placés aléatoirement ou
-								manuellement.
-							</p>
-							<div class="categories">Génération Procedural</div>
-							<div class="categories">Unreal Engine 4</div>
-						</div>
-
-						<div class="link-box">
-							<div>😁</div>
-							<a href="#" class="popup-modal-dismiss">Fermer</a>
-						</div>
-					</div> <!-- /modal-03 -->
-
-					<div id="modal-04" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/modals/Circuit_Gen.gif" alt="" />
-						</div>
-						<div class="description-box source">
-							<h4>Circuit Gen</h4>
-							<p>
-								Un système permettant de générer un circuit à partir de plusieurs tests de parcours
-								possibles avec la possibilité de corriger ces erreurs.
-							</p>
-							<div class="categories">Génération Procedural</div>
-							<div class="categories">Unreal Engine 4</div>
-						</div>
-
-						<div class="link-box">
-							<div>😁</div>
-							<a href="#" class="popup-modal-dismiss">Fermer</a>
-						</div>
-					</div> <!-- /modal-04 -->
-
-					<!-- modal popups - end
-	            ============================================================= -->
-
-				</div> <!-- /portfolio-wrapper -->
-
-			</div> <!-- /twelve -->
-
-		</div> <!-- /portfolio-content -->
-
-	</section> <!-- /portfolio -->
-	<footer>
-		<div class="row">
-
-			<div class="col-six tab-full pull-right social">
-
-				<ul class="footer-social">
-					<li><a href="https://twitter.com/M4tthy5"><i class="fa fa-twitter shake"></i></a></li>
-					<li><a href="https://paypal.me/m4tthy5"><i class="fa fa-paypal shake"></i></a></li>
-					<li><a href="https://www.youtube.com/channel/UCA81V-uMhPA2cgEsjMa13gA"><i
-								class="fa fa-youtube shake"></i></a></li>
-				</ul>
-
-			</div>
-			<div class="copyright">
-				<span>© Copyright Kards 2016.</span>
-				<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
-				<span>Degroote Matthys 2021</span>
-			</div>
-
-			<div id="go-top">
-				<a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
-			</div>
-
-		</div> <!-- /row -->
-	</footer>
-
-	<div id="preloader">
-		<div id="loader"></div>
-	</div>
-	<script src="js/jquery-2.1.3.min.js"></script>
-	<script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
+		h1:hover {
+			padding: 2.5vw;
+		}
+	</style>
+	<h1>M4tthy5's portefolio<br>Available soon!</h1>
 
 </body>
 
